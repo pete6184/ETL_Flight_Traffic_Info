@@ -1,5 +1,4 @@
-# ETL_Project
-## Group Dirty Frogs Project Proposal
+# Group Dirty Frogs ETL Project Proposal
 
 ## Title: Exploring the Relationship Between Flight Traffic Information and Air Quality
 
