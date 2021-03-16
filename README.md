@@ -1,12 +1,13 @@
 # ETL_Project
 ## Group Dirty Frogs Project Proposal
+
+## Title: Exploring the Relationship Between Flight Traffic Information and Air Quality
+
 ### Team Members:
 - Pete Johnson
 - Rylee Ahnen
 - Sandy Goodell
 - Chris Pulliam
-
-### Title: Exploring the Relationship Between Flight Traffic Information and Air Quality
 
 ## Objectives:
 - Combine datasets on flight traffic information and air quality
