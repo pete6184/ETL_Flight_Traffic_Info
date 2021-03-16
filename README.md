@@ -14,7 +14,7 @@
 - Track this trend over time
 - Did COVID reduce air traffic – and potentially improve air quality?
 - Focus analysis on US, not global data
-- 
+
 ## Potential Datasets:
 - Openflights.org
 - Airnow.gov API
