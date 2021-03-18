@@ -17,20 +17,21 @@ CREATE TABLE IF NOT EXISTS airline_routes
 CREATE TABLE IF NOT EXISTS airports
 (
     iata_code VARCHAR(5) NOT NULL,
-    identifier VARCHAR(5),
+    id VARCHAR(5),
     country_code VARCHAR(2) NOT NULL,
     ap_name VARCHAR(20) NOT NULL,
     ap_type VARCHAR(10),
-    lat REAL(0),
-    lng REAL(0),
+    lat REAL(32),
+    lng REAL(32),
     PRIMARY KEY(iata_code)
 );
 
 CREATE TABLE IF NOT EXISTS countries
 (
     code VARCHAR(2) NOT NULL,
+    id INTEGER,
     name VARCHAR(20) NOT NULL,
-    continent_code VARCHAR(2),
+    continent_id VARCHAR(2),
     PRIMARY KEY(code)
 );
 
@@ -51,3 +52,6 @@ ALTER TABLE airline_routes
 
 -- Create Indexes
 
+--drop table airline_routes;
+--drop table airports;
+--drop table countries;
