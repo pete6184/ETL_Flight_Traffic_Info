@@ -1,37 +1,34 @@
--- Create schemas
-
 -- Create tables
 CREATE TABLE IF NOT EXISTS airline_routes
 (
     route_id SERIAL NOT NULL,
     airline_id INTEGER,
-    airline VARCHAR(2),
-    source_airport VARCHAR(5) NOT NULL,
+    airline VARCHAR(10),
+    source_airport VARCHAR(10) NOT NULL,
     source_airport_id INTEGER,
-    destination_airport VARCHAR(5) NOT NULL,
+    destination_airport VARCHAR(10) NOT NULL,
     destination_airport_id INTEGER,
-    equipment VARCHAR(20),
+    equipment VARCHAR(200),
     PRIMARY KEY(route_id)
 );
 
 CREATE TABLE IF NOT EXISTS airports
 (
-    iata_code VARCHAR(5) NOT NULL,
-    id VARCHAR(5),
-    country_code VARCHAR(2) NOT NULL,
-    ap_name VARCHAR(20) NOT NULL,
-    ap_type VARCHAR(10),
-    lat REAL(32),
-    lng REAL(32),
+    iata_code VARCHAR(10) NOT NULL,
+    id VARCHAR(10),
+    country_code VARCHAR(5) NOT NULL,
+    ap_name VARCHAR(200) NOT NULL,
+    ap_type VARCHAR(200),
+    lat FLOAT(32),
+    lng FLOAT(32),
     PRIMARY KEY(iata_code)
 );
 
 CREATE TABLE IF NOT EXISTS countries
 (
-    code VARCHAR(2) NOT NULL,
+    code VARCHAR(5) NOT NULL,
     id INTEGER,
-    name VARCHAR(20) NOT NULL,
-    continent_id VARCHAR(2),
+    name VARCHAR(200) NOT NULL,
     PRIMARY KEY(code)
 );
 
