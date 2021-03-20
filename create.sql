@@ -1,5 +1,3 @@
--- Create schemas
-
 -- Create tables
 CREATE TABLE IF NOT EXISTS airline_routes
 (
