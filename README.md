@@ -87,6 +87,8 @@ ap.country_code=ct.code;
 
 
 ### Relational database schema:
-#### [Schema] (https://github.com/pete6184/ETL_Project/blob/main/create.sql)
+#### [Schema](https://github.com/pete6184/ETL_Project/blob/main/create.sql)
 
 #### [ERD](https://github.com/pete6184/ETL_Project/blob/main/Data/ERD_Airline_ETL.png)
+
+![ERD](Data/ERD_Airline_ETL)
