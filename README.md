@@ -76,7 +76,16 @@ We used a relational database (PostgreSQL) to link the data by IATA code and ISO
 
 
 ### Final tables/collection that will be used in the database:
+~~~
+SELECT ar.airline, ar.source_airport, ap.ap_name, ct.name, ap.lat, ap.lng, ap.ap_type, ar.destination_airport
+FROM airline_routes AS ar
+JOIN airports AS ap ON
+ar.source_airport = ap.iata_code
+JOIN countries AS ct ON
+ap.country_code=ct.code;
+~~~
 
 
 ### Relational database schema:
+#### [Schema] (https://github.com/pete6184/ETL_Project/blob/main/create.sql)
 
