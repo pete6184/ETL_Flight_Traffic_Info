@@ -28,7 +28,7 @@
 
 ## Final Project Objectives:
 
-Combining data sets that provides combined flight origin and destination data with airport latitude and longitude data points and country information data points. This cleaned and integrated data can be used to provide analysis with air quality data. Additionally, this data can produce flight maps by country.
+Combining data sets that provides combines origin flight data with airport latitude and longitude data points and country information data points, and desination airport code. This cleaned and integrated data can be used to provide analysis with air quality data. Additionally, this data can produce flight maps by country.
 
 #### Sources of data were extracted from:
 
@@ -37,7 +37,7 @@ Combining data sets that provides combined flight origin and destination data wi
 
 #### Data Transformation Objectives:
 
-- Determining primary keys from the flight route data sets to the airport data sets
+- Determining primary keys from the origin flight route data sets to the airport data sets
 - Determining primary keys from the airport data sets to the country data set
 - Types of transformation using jupyter notebook included:
     - cleaning
@@ -49,40 +49,33 @@ Combining data sets that provides combined flight origin and destination data wi
 
 Data schema will be created using the GenMyModel. The table data will upload using SQLAlchemy.
 
-The PostgreSQL relational database will link the data using IATA code for aiports and 2 character ISO code for country.  Final collection will be include the airport name, latitude, longitude and country information. See database schema for details.
+The PostgreSQL relational database will link the data using IATA code for aiports and 2 character ISO code for country.  Final collection will be include the airport name, latitude, longitude and country and destination airport code. See database schema for details.
 
 ### Transformation of the data:
-#### routes.csv
+#### [Airline route data](DATA/routes.csv)
 
 - Several columns were removed and renamed.
 
 - Many rows were empty for various columns; we had to do some manipulations for those to use them in our SQL database tables.
 
-#### airports.csv
+#### [Airport Data](DATA/airports.csv)
 
 - There
 
-#### countries.csv
+
+#### [Country Data](DATA/countries.csv)
 
 - the country
 
 
 ### Type of final production database data is loaded into:
 
-We used a relational database (PostgreSQL) to link the data by IATA code and ISO code.
+We used a relational database (PostgreSQL) to link the data by IATA code and ISO code. The was completed by using the following code:
+
+
 
 ### Final tables/collection that will be used in the database:
 
 
 ### Relational database schema:
-
-
-
-
-
-
-
-
-
-
 
