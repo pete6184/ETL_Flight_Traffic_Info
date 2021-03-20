@@ -52,18 +52,19 @@ Data schema will be created using the GenMyModel. The table data will upload usi
 The PostgreSQL relational database will link the data using IATA code for aiports and 2 character ISO code for country.  Final collection will be include the airport name, latitude, longitude and country and destination airport code. See database schema for details.
 
 ### Transformation of the data:
-#### [Airline route data](DATA/routes.csv)
+#### [Airline route data](https://github.com/pete6184/ETL_Project/blob/main/Data/routes.csv)
 
 - Several columns were removed and renamed.
 
 - Many rows were empty for various columns; we had to do some manipulations for those to use them in our SQL database tables.
 
-#### [Airport Data](DATA/airports.csv)
+#### [Airport Data](https://github.com/pete6184/ETL_Project/blob/main/Data/airports.csv)
+
 
 - There
 
 
-#### [Country Data](DATA/countries.csv)
+#### [Country Data](https://github.com/pete6184/ETL_Project/blob/main/Data/countries.csv)
 
 - the country
 
