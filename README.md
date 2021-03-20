@@ -28,7 +28,7 @@
 
 ## Final Project Objectives:
 
-Combining data sets that provides combines origin flight data with airport latitude and longitude data points and country information data points, and desination airport code. This cleaned and integrated data can be used to provide analysis with air quality data. Additionally, this data can produce flight maps by country.
+Combining data sets that provides combines origin flight data with airport latitude and longitude data points and country information data points, and destination airport code. This cleaned and integrated data can be used to provide analysis with air quality data. Additionally, this data can produce flight maps by country.
 
 #### Sources of data were extracted from:
 
@@ -45,28 +45,28 @@ Combining data sets that provides combines origin flight data with airport latit
     - filtering
     - aggregating
 
-#### Final Colletion:
+#### Final Collection:
 
 Data schema will be created using the GenMyModel. The table data will upload using SQLAlchemy.
 
-The PostgreSQL relational database will link the data using IATA code for aiports and 2 character ISO code for country.  Final collection will be include the airport name, latitude, longitude and country and destination airport code. See database schema for details.
+The PostgreSQL relational database will link the data using IATA code for airports and 2 character ISO code for country.  Final collection will be include the airport name, latitude, longitude and country and destination airport code. See database schema for details.
 
 ### Transformation of the data:
 #### [Airline route data](https://github.com/pete6184/ETL_Project/blob/main/Data/routes.csv)
 
-- Several columns were removed and renamed.
+- Several columns were removed and renamed. We also removed airports that no longer existed or were designated as closed.
 
 - Many rows were empty for various columns; we had to do some manipulations for those to use them in our SQL database tables.
 
 #### [Airport Data](https://github.com/pete6184/ETL_Project/blob/main/Data/airports.csv)
 
 
-- There
+- We removed duplicate country codes and unnecessary columns.
 
 
 #### [Country Data](https://github.com/pete6184/ETL_Project/blob/main/Data/countries.csv)
 
-- the country
+- We had to rename the country code for Namibia from 'NA' to 'N' in order to prevent the country code from displaying as N/A.
 
 
 ### Type of final production database data is loaded into:
@@ -89,3 +89,4 @@ ap.country_code=ct.code;
 ### Relational database schema:
 #### [Schema] (https://github.com/pete6184/ETL_Project/blob/main/create.sql)
 
+#### [ERD](Data/)
